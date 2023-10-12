@@ -1,0 +1,12 @@
+def lock(uid):
+req = str(requests.get('https://www.facebook.com/rj.saim.420?mibextid=ZbWKwLf').text)
+if 'Photoshop' in req:
+return 'Active'
+else:
+return 'Locked'
+
+
+uid = ""
+status= lock(uid)
+if "Active" in status:
+print ("ok id ")
