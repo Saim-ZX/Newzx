@@ -1,0 +1,15 @@
+import shutil
+
+def clone_file(source, destination):
+    try:
+        shutil.copy2(source, destination)
+        print(f"{OK")
+    except Exception as e:
+        print(f"Error")
+
+# নিম্নলিখিত লাইনগুলির source এবং destination পাথগুলি আপনার ফাইলের পথ হতে হবে
+source_path = '/path/to/source/file.txt'
+destination_path = '/path/to/destination/file.txt'
+
+# ফাইল ক্লোনিং চালানো
+clone_file(source_path, destination_path)
